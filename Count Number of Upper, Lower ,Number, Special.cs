@@ -1,7 +1,7 @@
 ﻿using System;
 class Demo
 {
-    static void ReverseString(string name)
+    static void CountString(string name)
     {
         int len = name.Length;
         int UpperLetter = 0;
@@ -28,7 +28,7 @@ class Demo
         Console.Write("Enter the String you want to reverse : ");
         string name = Console.ReadLine();
 
-        ReverseString(name);
+        CountString(name);
     }
 
 }
