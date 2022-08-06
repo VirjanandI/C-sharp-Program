@@ -1,0 +1,41 @@
+class PerformCalculation
+{
+    static int C1(int num1, int num2)
+    {
+        int result;
+        char choice = '+';
+      switch (choice)
+        {
+            case '+':
+                result = num1 + num2;
+                break;
+
+            case '-':
+                result = num1 -num2;
+                break;
+
+            case '*':
+                result = num1 * num2;
+                break;
+
+            case '/':
+                result = num1 / num2;
+                break;
+
+        return result;
+        }
+      
+    }
+    static void Main()
+    {
+        System.Console.Write("enter the number");
+        int num1 =System.Convert.ToInt32(System.Console.ReadLine());
+       
+        System.Console.Write("enter the number");
+        int num2 = System.Convert.ToInt32(System.Console.ReadLine());
+
+        System.Console.WriteLine(C1(num1, num2 ));
+    }
+}
+
+     
