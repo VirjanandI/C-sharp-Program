@@ -23,7 +23,7 @@ class Demo
         Console.WriteLine("Length(No. of Character) : {0} \nUpperLetter : {1}  \nLowerLetter : {2} \nNumber : {3}  \nSpecialCharacter : {4}", len,UpperLetter, LowerLetter, Number, SpecialCharacter);
     }
 
-    static void Main()
+    static void Main1()
     {
         Console.Write("Enter the String you want to reverse : ");
         string name = Console.ReadLine();
