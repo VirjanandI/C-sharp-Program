@@ -1,9 +1,18 @@
 class PerformCalculation
 {
-    static int C1(int num1, int num2)
+    static int Calculation()
     {
-        int result;
-        char choice = '+';
+      int result =0;
+       System.Console.Write("Enter Number (Num1) : ");
+        int num1 =int.Parse(System.Console.ReadLine());
+       
+        System.Console.Write("Enter Number (Num2) : ");
+        int num2 = System.Convert.ToInt32(System.Console.ReadLine());
+       
+        System.Console.Write("1. Addition\n 2. Subtraction\n 3. Multiplication\n 4. Division "); 
+        System.Console.Write("Enter Operator : ");
+        char choice = System.Convert.ToChar(System.Console.ReadLine());
+
       switch (choice)
         {
             case '+':
@@ -21,20 +30,13 @@ class PerformCalculation
             case '/':
                 result = num1 / num2;
                 break;
-
-        return result;
         }
-      
+      return result;
     }
     static void Main()
     {
-        System.Console.Write("enter the number");
-        int num1 =System.Convert.ToInt32(System.Console.ReadLine());
        
-        System.Console.Write("enter the number");
-        int num2 = System.Convert.ToInt32(System.Console.ReadLine());
-
-        System.Console.WriteLine(C1(num1, num2 ));
+       System.Console.WriteLine(Calculation());
     }
 }
 
